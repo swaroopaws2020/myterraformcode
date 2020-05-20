@@ -62,13 +62,7 @@ resource "aws_subnet" "mysubnet_public-3" {
   }
 }
 
-terraform {
-  backend "s3" {
-    bucket = "myterraform-code"
-    key    = "myterraformcode.tfstate"
-    region = "us-east-1"
-  }
-}
+
   
 
 
